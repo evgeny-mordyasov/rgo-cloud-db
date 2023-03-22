@@ -13,7 +13,7 @@ CREATE TABLE CLIENT (
     ROLE               VARCHAR(16) DEFAULT 'USER'
 ) TABLESPACE ${tbsTables};
 
-CREATE UNIQUE INDEX mail_uq_idx
+CREATE UNIQUE INDEX ct_mail_uq_idx
     ON CLIENT (MAIL)
     TABLESPACE ${tbsIdx};
 

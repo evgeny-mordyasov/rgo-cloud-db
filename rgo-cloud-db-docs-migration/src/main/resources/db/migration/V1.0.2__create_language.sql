@@ -5,7 +5,7 @@ CREATE TABLE LANGUAGE (
     NAME      VARCHAR(128) NOT NULL
 ) TABLESPACE ${tbsTables};
 
-CREATE UNIQUE INDEX name_uq_idx
+CREATE UNIQUE INDEX lg_name_uq_idx
     ON LANGUAGE (NAME)
     TABLESPACE ${tbsIdx};
 
